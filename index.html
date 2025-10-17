@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/logo.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/logo.png" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="Full Stack Media" />
+    <meta
+      name="description"
+      content="Full Stack Media delivers professional videography, editing, and marketing services designed to elevate brands and engage audiences."
+    />
+    <meta
+      name="keywords"
+      content="Videography, Drone Footage, Script Writing, Client Choreography, Editing, Publishing, Analytics Of Content, Ad Campaigns for Businesses, Social Media Marketing, Online Marketing, Social Media Advertising"
+    />
+    <meta name="author" content="Full Stack Media Company" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <!-- <meta
+      property="og:image"
+      content="imgs/logo.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" /> -->
+
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="styles/aos.css" />
+    <!-- Calendly badge widget -->
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <!-- Style File -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Full Stack Media</title>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="imgs/logo.png" alt="Full Stack Media Logo" />
+          <h3>Full Stack Media</h3>
+        </a>
+        <div class="navbar-container">
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <li><a href="#services">Services</a></li>
+              <li><a href="#case-staudies">Case Studies</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="tel:786-309-7296">(786) 309-7296</a></li>
+            </ul>
+          </nav>
+          <button class="request-btn" onclick="openCalendly()">
+            Schedule a meeting
+          </button>
+          <div class="toggle-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640"
+              class="open"
+            >
+              <path
+                d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <main class="page-layout">
+      <!-- Start Banner -->
+      <section class="banner" id="home">
+        <div class="container">
+          <video
+            class="video-banner"
+            autoplay
+            loop
+            muted
+            playsinline
+            webkit-playsinline
+          >
+            <source src="imgs/banner-video.webm" type="video/webm" />
+            <source src="imgs/banner-video.mp4" type="video/mp4" />
+          </video>
+          <div class="content">
+            <h1 data-aos="zoom-in-down" data-aos-duration="1500">
+              Media Solutions for Every Vision.
+            </h1>
+            <p data-aos="fade-right" data-aos-duration="1000">
+              Whether you’re a business, content creator, or organization, we
+              provide professional media services to inspire, engage, and grow.
+            </p>
+          </div>
+          <div class="calendly-widget">
+            <div
+              class="calendly-inline-widget"
+              data-url="https://calendly.com/fullstackmediallc-p1lx/30min"
+            ></div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
+          </svg>
+        </div>
+      </section>
+      <!-- End Banner -->
+
+      <!-- Start Services -->
+      <section class="services-section" id="services">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-aos="fade-down" data-aos-duration="1200">What We Do</h2>
+            <p data-aos="zoom-out" data-aos-duration="1200">
+              We provide end-to-end media services — from filming to publishing
+              — to help you share your story, grow your brand, and connect with
+              your audience.
+            </p>
+          </div>
+
+          <div class="services-grid"></div>
+        </div>
+      </section>
+      <!-- End Services -->
+
+      <!-- Start Partner Section -->
+      <section class="partner">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-aos="fade-down" data-aos-duration="1200">
+              Our Trusted Partners
+            </h2>
+            <p data-aos="zoom-out" data-aos-duration="1200">
+              Trusted by the world’s biggest platforms, we ensure your brand is
+              seen where it matters most.
+            </p>
+          </div>
+          <div class="partner-logos">
+            <div data-aos="flip-left" data-aos-duration="1200" class="img-box">
+              <img src="imgs/google-partner.png" alt="Partner 1" />
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-duration="1200"
+              data-aos-delay="200"
+              class="img-box"
+            >
+              <img src="imgs/meta-partner.png" alt="Partner 2" />
+            </div>
+
+            <div
+              data-aos="flip-left"
+              data-aos-duration="1200"
+              data-aos-delay="400"
+              class="img-box"
+            >
+              <img src="imgs/tiktok-partner.png" alt="Partner 3" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Partner Section -->
+
+      <!-- Start Stats Section -->
+      <section class="stats" id="case-staudies">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-aos="fade-down" data-aos-duration="1200">
+              Client Success Stories
+            </h2>
+            <p data-aos="zoom-out" data-aos-duration="1200">
+              Real results from our marketing campaigns
+            </p>
+          </div>
+
+          <div class="stats-grid">
+            <!-- Who Tutors -->
+            <div class="stat-box" data-aos="fade-down" data-aos-duration="1000">
+              <div class="company-header">
+                <div class="company-name">
+                  <h4>Who Tutors</h4>
+                </div>
+                <div class="img-box">
+                  <img src="imgs/stats_1.png" alt="Who Tutors Image" />
+                </div>
+              </div>
+              <div class="metrics-list">
+                <div class="metric-item">
+                  <div class="metric-value" data-target="48">0%</div>
+                  <div class="metric-label">Increase in website traffic</div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-value" data-target="72">0%</div>
+                  <div class="metric-label">
+                    Increase in social media engagement
+                  </div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-value" data-target="36">0%</div>
+                  <div class="metric-label">
+                    Increase in parent/student inquiries
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phoenix Sports -->
+            <div
+              class="stat-box"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="company-header">
+                <div class="company-name">
+                  <h4>Phoenix Volleyball Club</h4>
+                </div>
+                <div class="img-box">
+                  <img src="imgs/stats_2.png" alt="Phoenix Sports Image" />
+                </div>
+              </div>
+              <div class="metrics-list">
+                <div class="metric-item">
+                  <div class="metric-value" data-target="35">0%</div>
+                  <div class="metric-label">Increase in website traffic</div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-value" data-target="81">0%</div>
+                  <div class="metric-label">
+                    Increase in social media engagement
+                  </div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-value" data-target="29">0%</div>
+                  <div class="metric-label">Increase in program inquiries</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ponce de Leon Middle School -->
+            <div
+              class="stat-box"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <div class="company-header">
+                <div class="company-name">
+                  <h4>Ponce de Leon Middle School</h4>
+                </div>
+                <div class="img-box">
+                  <img
+                    src="imgs/stats_3.png"
+                    alt="Ponce de Leon Middle School Image"
+                  />
+                </div>
+              </div>
+              <div class="metrics-list">
+                <div class="metric-item">
+                  <div class="metric-value" data-target="27">0%</div>
+                  <div class="metric-label">Increase in website traffic</div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-value" data-target="63">0%</div>
+                  <div class="metric-label">
+                    Increase in social media engagement
+                  </div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-value" data-target="22">0%</div>
+                  <div class="metric-label">
+                    Increase in enrollment inquiries
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Stats Section -->
+
+      <!-- Start Booking Section -->
+      <section class="booking" id="contact">
+        <div class="container">
+          <div
+            class="booking-content"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <h2>
+              Go Beyond Basics. <br />
+              Go Full Stack.
+            </h2>
+            <p>
+              Let's discuss how Full Stack Media can help bring your vision to
+              life. Schedule a meeting with us today!
+            </p>
+          </div>
+          <div
+            class="booking-form"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
+            <div class="form-container">
+              <h2>Let's Get Started</h2>
+              <form
+                id="contactForm"
+                onsubmit="handleFormSubmit(event); return false;"
+                method="post"
+                action="javascript:void(0);"
+              >
+                <div class="row">
+                  <div class="col">
+                    <input type="text" name="name" id="name" required />
+                    <label for="name">Full Name</label>
+                  </div>
+                  <div class="col">
+                    <input type="email" name="email" id="email" required />
+                    <label for="email">Email Address</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <input type="tel" name="phone" id="phone" />
+                    <label for="phone">Phone Number</label>
+                  </div>
+                  <div class="col">
+                    <input type="text" name="company" id="company" />
+                    <label for="company">Company Name</label>
+                  </div>
+                </div>
+
+                <div class="services-selection">
+                  <h3>Select Services You're Interested In:</h3>
+
+                  <div class="option">
+                    <input
+                      type="checkbox"
+                      id="videography"
+                      name="services"
+                      value="videography"
+                    />
+                    <label for="videography">Videography</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="checkbox"
+                      id="drone-footage"
+                      name="services"
+                      value="drone-footage"
+                    />
+                    <label for="drone-footage">Drone Footage</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="checkbox"
+                      id="script-writing"
+                      name="services"
+                      value="script-writing"
+                    />
+                    <label for="script-writing">Script Writing</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="checkbox"
+                      id="client-choreography"
+                      name="services"
+                      value="client-choreography"
+                    />
+                    <label for="client-choreography">Client Choreography</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="checkbox"
+                      id="editing"
+                      name="services"
+                      value="editing"
+                    />
+                    <label for="editing">Editing</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="checkbox"
+                      id="Publishing"
+                      name="services"
+                      value="Publishing"
+                    />
+                    <label for="Publishing">Publishing</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="checkbox"
+                      id="analytics-content"
+                      name="services"
+                      value="analytics-content"
+                    />
+                    <label for="analytics-content">Analytics Of Content</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="checkbox"
+                      id="ad-campaigns"
+                      name="services"
+                      value="ad-campaigns"
+                    />
+                    <label for="ad-campaigns"
+                      >Ad Campaigns For Businesses</label
+                    >
+                  </div>
+                </div>
+
+                <div class="submit-btn">
+                  <button type="submit" class="request-btn">
+                    Schedule a Meeting
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Booking Section -->
+
+      <!-- Start Loader -->
+      <div class="loader-wrapper">
+        <div class="loader">
+          <img src="imgs/loader_icon.gif" alt="Loader Icon" />
+          <div class="loading-text">
+            Loading<span class="dots"
+              ><span class="dot">.</span><span class="dot">.</span
+              ><span class="dot">.</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- End Loader -->
+
+      <!-- Start Scroll To Top Button -->
+      <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+          <path
+            d="M342.6 81.4C330.1 68.9 309.8 68.9 297.3 81.4L137.3 241.4C124.8 253.9 124.8 274.2 137.3 286.7C149.8 299.2 170.1 299.2 182.6 286.7L288 181.3L288 552C288 569.7 302.3 584 320 584C337.7 584 352 569.7 352 552L352 181.3L457.4 286.7C469.9 299.2 490.2 299.2 502.7 286.7C515.2 274.2 515.2 253.9 502.7 241.4L342.7 81.4z"
+          />
+        </svg>
+      </button>
+      <!-- End Scroll To Top Button -->
+    </main>
+
+    <!-- AOS Library -->
+    <script src="js/aos.js"></script>
+    <!-- Calendly badge widget Script -->
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
